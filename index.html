@@ -1,0 +1,109 @@
+<html>
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="index.css">
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="row-div">
+		
+		<div class="column div">
+			<div class="side-section">
+				
+				<div class='profile-div'>
+					<div class="banner-div">
+					</div>
+					<img class='logo-img' src='/scrimbalogo.png' alt="Scrimba logo">
+					<h3>Scrimba</h3>
+					<p class="gray">@Scrimba</p>
+					<p class="slogan">Unleash your coding potential with Scrimba!</p>
+					<div class="follow-wrapper">
+						<div class="followers-div">
+							<p class="follow-amount" id='following-amount'>121</p>
+							<p class="gray follow-title">following</p>
+						</div>
+						<div class="followers-div">
+							<p class="follow-amount" id='followers-amount'>321</p>
+							<p class="gray follow-title">followers</p>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class='follow-div'>
+					<p>Who is to follow you</p>
+					<ul>
+						<li class="tofollow-row"> 
+							<img class='tofollow-img' src='/musk.png' alt='face Elon Musk'><p>@Elon_Musk</p>
+							<button data-follow="@Elon_Musk" class='' id='@Elon_Musk'>Follow</button>
+						</li>
+						
+						<li class="tofollow-row"> 
+							<img class='tofollow-img' src='/overflow.png' alt='face Person screaming'><p>@Noobcod9 </p>
+							<button class='' id='@Noobcod9' data-follow="@Noobcod9">Follow</button>
+						</li>
+						
+						<li class="tofollow-row"> 
+							<img class='tofollow-img' src='/tcruise.png' alt='face Person screaming'><p> @Tcruise12</p>
+							<button class='' id='@Tcruise12' data-follow="@Tcruise12">Follow</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="column-div">
+			
+			<div class="main-section"> 
+				<header>
+					<h1>Twimba</h1>
+				</header>
+				<main>
+					<div class="tweet-input-area">
+						<img src="/scrimbalogo.png" class="profile-pic">
+						<textarea placeholder="What's happening?" id="tweet-input"></textarea>
+					</div>
+					<button id="tweet-btn">Tweet</button>
+					<div class="feed" id="feed">
+						<!-- Tweets here!! -->
+					</div>
+					<section>
+						<div id="modal" class="modal hidden">
+							<div class="modal-content">
+								<div class="modal-exit" id='modal-close'>&times;</div>
+								<h2 class="modal-h2">Are you sure you want to delete the tweet?</h2>
+								<div id="button-wrapper" class="button-wrapper">
+									<button id="yes-btn">yes</button>
+									<button id="no-btn">No</button>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+			  </div>
+		  </div>
+		  
+		  <div class="column-div">
+			  <div class="side-section">
+				<div class="requests-div">
+					<p>Friend requests</p>
+					<ul id="requests-list" class="requests-list">
+
+					</ul>
+				</div>
+			</div>
+		  </div>
+		
+	</div>
+	<button class="reset-btn" id="reset-btn">RESET DATA</button>
+	<script src="index.js" type="module"></script>
+</body>
+
+</html>
